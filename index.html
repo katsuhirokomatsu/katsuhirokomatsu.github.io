@@ -13,14 +13,24 @@
     h2 { margin-top: 40px; }
     li { margin-bottom: 18px; }
     a { color: #1763a0; }
+    a:hover { text-decoration: none; }
+    .profile { margin: 24px 0 36px; }
+    .profile p { margin: 8px 0; }
+    .profile-label { display: inline-block; min-width: 145px; font-weight: 600; }
     .status { color: #555; }
+    @media (max-width: 600px) {
+      .profile-label { display: block; min-width: 0; }
+    }
     @media (max-width: 600px) { body { margin: 28px auto; } }
   </style>
 </head>
 <body>
   <h1>Katsuhiro Komatsu</h1>
   <p>Assistant Professor<br>Institute of Economic Research, Kyoto University</p>
-  <p><a href="https://sites.google.com/view/katsuhiro-komatsu">Main Homepage</a></p>
+  <div class="profile">
+    <p><span class="profile-label">Research Interests</span> Public Economics, Labor Economics, Macroeconomics</p>
+    <p><span class="profile-label">Email</span> <a href="mailto:komatsu@kier.kyoto-u.ac.jp">komatsu@kier.kyoto-u.ac.jp</a></p>
+  </div>
   <h2>Working Papers</h2>
   <ul>
   <li>
